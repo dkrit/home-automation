@@ -1,6 +1,8 @@
 # home-automation
 A totally custom built system, to automate an off-grid system with 2 inverters (a 1.5k and a 5k) and a solar water heating system.
 
+I'm providing this source code and information, as a thanks to the many open source contributors out there from whom I have scraped information. I'm hoping this will be useful to someone out there with similar equipment and/or needs. I'm probably not the only one bought a small system at first, only to then later start over with a bigger setup.
+
 ## Installation #1
 
 ```
@@ -38,7 +40,7 @@ This installation supplies power to essential loads and/or small and continuous 
 
 AC input of this inverter is currently connected as a load of installation #3, via a dedicated breaker unaffected by the manual transfer switch.
 
-It was installed mainly as a backup for load shedding. Solar was later added to reduce utility consumption.
+It was installed mainly as a backup for load shedding to keep just essential appliances going. At this point in time there wasn't any financial motivation for a larger system as our monthly electricity usage totalled around 400 kwh, electricity prices were lower and equipment costs were a lot higher than today. A solar panel was later added when panels became cheaper.
 
 ## Installation #3
 
@@ -47,7 +49,7 @@ It was installed mainly as a backup for load shedding. Solar was later added to 
 Luxpower SNA 5000
 
 1x Battery:
-Hubble AM5 5.12 kwh
+Hubble AM5 5.12 kwh (second hand)
 
 6x Solar Panels:
 595W  Jenko
@@ -61,9 +63,11 @@ Inverter and battery has a communication cable, and battery type is set to "Li-I
 
 The AC input of this inverter is not connected to grid power, making this type of installation a off-grid system as opposed to a grid-tied or grid-tied hybrid. Off-grid systems need not be registered with eskom or with a municipality. (OHSA laws have been complied with, as that is a different story.) A special factory type 3-point plug was added by the installer, as an option to connect to grid power in the future.
 
+At the time of this install, kit was a lot cheaper and utility prices had increased a lot. The payback period was thus shortened drastically, so the step was taken. We now use about 20 units for a good summer month!
+
 ## Installation #4
 
-Rasberry PI: Extends WIFI and connects to installations. Runs python code:
+Rasberry PI: Extends WIFI and connects to installations. Started with this in mid 2023 and code has been through many transformations and experiments. Written in python:
 
 * Talks to the geyserwala via rest api.
 * Talks to luxpower inverter via modbus protocol, using the wifi dongle.
@@ -84,7 +88,8 @@ Rasberry PI: Extends WIFI and connects to installations. Runs python code:
 
 ## Next steps
 
-* Remove config from repo. Should rather be supplied by the user at install time, and stored in the runtime environment.
+* Think about buying more batteries for the luxpower. Perhaps another 10 or 15 kwh will make the solar power to battery ratio more "normal". We should then handle bad weather better and may be able to connect all the rest of the appliances as non-essential loads. We're yet to see winter data for the luxpower.
+* Remove config from this repo. Should rather be supplied by the user at install time, and stored in the runtime environment.
 * With recent tweaks, modules are no longer well structured. Code architecture could be improved. I'm thinking of applying the pipe-and-filter software pattern, to apply enabled automations in a set priority order.
 * Add graphs for hubble battery's min and max cell voltage, so that we can better monitor cell imbalance.
 * Improve the top-balancing situation for both systems. It could be that we have to disconnect the luxpower to hubble communication and switch to lead-acid profile, that allows voltages to be manually configured.
