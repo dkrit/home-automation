@@ -3,6 +3,8 @@ A totally custom built system, to automate an off-grid system with 2 inverters (
 
 I'm providing this source code and information, as a thanks to the many open source contributors out there from whom I have scraped information. I'm hoping this will be useful to someone out there with similar equipment and/or needs. I'm probably not the only one bought a small system at first, only to then later start over with a bigger setup.
 
+A note on home assistant: Since HA can run on your own server it does sound appealing. I haven't taken the time yet to experiment with it. I started with this project and had the axpert integration in place before I became aware of HA. I am skeptical however, that I will achieve a like-for-like substitute for all of the automations I currently have in place here. In HA, can different devices being present on the app, influence each other's decisions and automations? I also care not that much, to have the ability to press buttons on my phone that effects changes to my system for day-to-day needs. Everything that can be automatic, should be.
+
 ## Installation #1
 
 ```
