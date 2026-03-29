@@ -6,7 +6,7 @@ A totally custom built system, to automate an off-grid system with 2 inverters (
 ```
 200L Geyser, with 2000W element
 Solar water heater
-Geyserwala controller. (Initially, a less primitive geyserwise max controller.)
+Geyserwala controller. (Initially a geyserwise max controller was installed, but this didn't allow any integration.)
 Install date: 27 October 2022
 ```
 
