@@ -93,3 +93,4 @@ Rasberry PI: Extends WIFI and connects to installations. Started with this in mi
 * With recent tweaks, modules are no longer well structured. Code architecture could be improved. I'm thinking of applying the pipe-and-filter software pattern, to apply enabled automations in a set priority order.
 * Add graphs for hubble battery's min and max cell voltage, so that we can better monitor cell imbalance.
 * Improve the top-balancing situation for both systems. It could be that we have to disconnect the luxpower to hubble communication and switch to lead-acid profile, that allows voltages to be manually configured.
+* When disconnecting non-essential loads in the middle of the night from the luxpower, take into account the 1.5k system's battery level. A lower combined battery level across both systems means we may need to disconnect sooner, else the "combined island" doesn't reserve enough power for essential loads.
