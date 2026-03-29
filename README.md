@@ -3,13 +3,20 @@ A totally custom build system, to automate an off-grid system with 2 inverters (
 
 ## Installation #1
 
-200L Geyser with connected solar water heating and geyserwala controller. (Initially, a less primitive geyserwise max controller.)
-One-way valve was added, to block overnight convection currents (Reduced overnight losses from ~22 degrees to ~7 degrees celcius!)
-Receives hot water from solar water heater and via element as a load of installation #3. Element: 2000W
-Solar water heating install date: 27 October 2022
+```
+200L Geyser, with 2000W element
+Solar water heater
+Geyserwala controller. (Initially, a less primitive geyserwise max controller.)
+Install date: 27 October 2022
+```
+
+One-way valve was added, to block overnight convection currents causing thermal syphoning. This reduced overnight losses from ~22 degrees to ~7 degrees celcius!
+
+Element is connected as a non-essential load of installation #3.
 
 ## Installation #2
 
+```
 1x Inverter:
 UPS-INV-1.5KVA-MEX
 AC output: 1.5 kva (~1.2 kw)
@@ -25,15 +32,17 @@ Install date: 20 April 2023 and 23 August 2023
 1x Solar panel:
 Canadian Solar 555w Mono
 Install date: 28 Jan 2025
+```
 
 This installation supplies power to essential loads and/or small and continuous loads via separately installed circuits and dedicated wall plugs, around 200w average load 24/7, 700w peak.
+
 AC input of this inverter is currently connected as a load of installation #3, via a dedicated breaker unaffected by the manual transfer switch.
+
 It was installed mainly as a backup for load shedding. Solar was later added to reduce utility consumption.
 
 ## Installation #3
 
-Install date: 14 August 2025
-
+```
 1x Inverter:
 Luxpower SNA 5000
 
@@ -43,7 +52,10 @@ Hubble AM5 5.12 kwh
 6x Solar Panels:
 595W  Jenko
 
-Manual transfer switch: Most non-essential loads can be powered either from this inverter, or from utility. Certain large appliance (like oven) remain powered only via utility.
+Install date: 14 August 2025
+```
+
+Manual transfer switch: Most non-essential loads can be powered either from this inverter, or from utility. Certain large appliances (like the oven) remain powered only via utility.
 
 Inverter and battery has a communication cable, and battery type is set to "Li-Ion" and battery brand to "2 - Pylontech" on the inverter.
 
