@@ -1,5 +1,5 @@
 # home-automation
-A totally custom build system, to automate an off-grid system with 2 inverters (a 1.5k and a 5k) and a solar water heating system.
+A totally custom built system, to automate an off-grid system with 2 inverters (a 1.5k and a 5k) and a solar water heating system.
 
 ## Installation #1
 
